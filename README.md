@@ -78,21 +78,6 @@ This project applies **Generative Flow Networks (GFlowNets)** to discover divers
 - **Numerical**: NumPy, Pandas
 - **Visualization**: Matplotlib, Seaborn
 
-## 🚀 Quick Start
-
-### Run in Google Colab (Recommended)
-```bash
-# Open the notebook
-https://colab.research.google.com/github/YOUR_USERNAME/GFlowNet-Alpha-Mining/blob/main/notebooks/Alpha_GFN_v1_Baseline.ipynb
-
-# Run all cells
-Runtime → Run all
-
-git clone https://github.com/YOUR_USERNAME/GFlowNet-Alpha-Mining.git
-cd GFlowNet-Alpha-Mining
-pip install -r requirements.txt
-jupyter notebook notebooks/Alpha_GFN_v1_Baseline.ipynb
-
 ## 📚 Connection to Research
 
 This work builds upon:
@@ -108,4 +93,20 @@ This work builds upon:
 **Target labs:**
 - HKUST Intelligent Decision-Making Lab (Prof. Ling Pan) - preparing for formal admission Fall 2026
 - Stanford RL/Finance groups (Ashwin Rao, Stefano Ermon) - exploring collaboration during Summer 2026 exchange
+
+
+## 🚀 Quick Start
+
+### Run in Google Colab (Recommended)
+```bash
+# Open the notebook
+https://colab.research.google.com/github/YOUR_USERNAME/GFlowNet-Alpha-Mining/blob/main/notebooks/Alpha_GFN_v1_Baseline.ipynb
+
+# Run all cells
+Runtime → Run all
+
+git clone https://github.com/YOUR_USERNAME/GFlowNet-Alpha-Mining.git
+cd GFlowNet-Alpha-Mining
+pip install -r requirements.txt
+jupyter notebook notebooks/Alpha_GFN_v1_Baseline.ipynb
 
