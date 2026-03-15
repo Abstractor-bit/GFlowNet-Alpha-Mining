@@ -109,18 +109,3 @@ This work builds upon:
 - HKUST Intelligent Decision-Making Lab (Prof. Ling Pan) - preparing for formal admission Fall 2026
 - Stanford RL/Finance groups (Ashwin Rao, Stefano Ermon) - exploring collaboration during Summer 2026 exchange
 
-## 📚 Connection to Research
-
-This work builds upon:
-
-- **Bengio et al. (2021)**: [GFlowNet Foundations](https://arxiv.org/abs/2111.09266) - Original framework
-- **Pan et al. (2024-2025)**: 
-  - Local Credit Assignment for better training efficiency
-  - Distributional GFlowNets for modeling reward uncertainty
-  - Flow Factorization for scalability
-- **Chen et al. (2025)**: [AlphaSAGE](https://arxiv.org/abs/2509.25055) - Structure-aware encoding with RGCN
-- **Shen et al.**: [Alpha-GFN](https://github.com/nshen7/alpha-gfn) - Baseline framework
-
-**Target labs:**
-- HKUST Intelligent Decision-Making Lab (Prof. Ling Pan) - preparing for formal admission Fall 2026
-- Stanford RL/Finance groups (Ashwin Rao, Stefano Ermon) - exploring collaboration during Summer 2026 exchange
