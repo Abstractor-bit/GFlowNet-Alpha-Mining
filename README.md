@@ -53,3 +53,42 @@ This project applies **Generative Flow Networks (GFlowNets)** to discover divers
 - Training time: <5 minutes on Google Colab
 
 **Top Generated Alpha Example:**
+
+
+## 🔍 Critical Analysis & Limitations
+
+### Identified Issues
+1. **No train/test split**: Current IC likely optimistically biased (20-40% expected decay OOS)
+2. **Simple state encoding**: Sequence representation loses expression tree structure
+3. **Single objective**: IC only, ignoring transaction costs, capacity, risk
+4. **Small dataset**: 5 stocks, 4 years (vs production: 100s of stocks, 10+ years)
+5. **Unsafe evaluation**: Using `eval()` instead of proper AST parser
+
+### Planned Improvements
+- [ ] Implement time-series cross-validation (priority #1)
+- [ ] RGCN encoder for structure-aware representation (AlphaSAGE approach)
+- [ ] Multi-objective reward: IC + Sharpe + novelty - turnover
+- [ ] Integrate local credit assignment (Pan et al. 2024)
+- [ ] Distributional GFlowNet for risk-aware generation
+
+## 🛠️ Tech Stack
+
+- **Deep Learning**: PyTorch 2.0+
+- **Data**: yfinance (prototype), target Qlib (production)
+- **Numerical**: NumPy, Pandas
+- **Visualization**: Matplotlib, Seaborn
+
+## 🚀 Quick Start
+
+### Run in Google Colab (Recommended)
+```bash
+# Open the notebook
+https://colab.research.google.com/github/YOUR_USERNAME/GFlowNet-Alpha-Mining/blob/main/notebooks/Alpha_GFN_v1_Baseline.ipynb
+
+# Run all cells
+Runtime → Run all
+
+git clone https://github.com/YOUR_USERNAME/GFlowNet-Alpha-Mining.git
+cd GFlowNet-Alpha-Mining
+pip install -r requirements.txt
+jupyter notebook notebooks/Alpha_GFN_v1_Baseline.ipynb
