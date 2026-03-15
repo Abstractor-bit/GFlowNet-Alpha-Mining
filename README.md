@@ -47,8 +47,8 @@ This project applies **Generative Flow Networks (GFlowNets)** to discover divers
 ## 📊 Results
 
 **Baseline Implementation (Week 1):**
-- Mean IC: [YOUR_VALUE] (vs random baseline: ~0.05)
-- Max IC: [YOUR_VALUE]
+- Mean IC: [] (vs random baseline: ~0.05)
+- Max IC: []
 - Diversity: [X] unique expressions from 50 samples
 - Training time: <5 minutes on Google Colab
 
