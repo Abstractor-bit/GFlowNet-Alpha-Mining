@@ -22,7 +22,7 @@
 
   <!-- Title -->
   <text x="460" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#1A202C">Diffusion-Flow Alpha Mining: Probability Transport over Expression Space</text>
-  <text x="460" y="50" text-anchor="middle" font-size="10.5" fill="#718096">GFlowNets / flow matching / diffusion models share the same backbone: learned transport P(prior) → P(α) ∝ R(α)</text>
+  <text x="460" y="50" text-anchor="middle" font-size="10.5" fill="#718096">Discrete flow samplers / flow matching / diffusion models share the same backbone: learned transport P(prior) → P(α) ∝ R(α)</text>
   <line x1="40" y1="62" x2="880" y2="62" stroke="#E2E8F0" stroke-width="1"/>
 
   <!-- ===== TOP: PRIOR (uniform over expression trees) ===== -->
@@ -70,7 +70,7 @@
   <rect x="310" y="358" width="300" height="92" rx="5" fill="#F7FAFC" stroke="#CBD5E0" stroke-width="1"/>
   <text x="460" y="377" text-anchor="middle" font-size="10" font-weight="600" fill="#4A5568">Mathematical Unification</text>
   <line x1="320" y1="383" x2="600" y2="383" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="320" y="397" font-size="9" fill="#4A5568">• GFlowNet TB loss ≡ flow matching for discrete</text>
+  <text x="320" y="397" font-size="9" fill="#4A5568">• Trajectory Balance ≡ discrete flow matching</text>
   <text x="320" y="410" font-size="9" fill="#4A5568">• Continuous: DDPM score = ∇log p_t(x)</text>
   <text x="320" y="423" font-size="9" fill="#4A5568">• Trajectory: P_F(τ)/P_B(τ) = R(α)/Z</text>
   <text x="320" y="436" font-size="9" fill="#4A5568">• Diversity ≠ RL argmax → better coverage</text>
@@ -121,7 +121,7 @@
 
   <!-- ===== Bottom annotation ===== -->
   <rect x="50" y="456" width="820" height="52" rx="5" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="460" y="473" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4A5568">Reference: AlphaSage (Shi et al. 2023) + GFlowNet-TB (Bengio et al. 2023) + Flow Matching (Lipman et al. 2022)</text>
+  <text x="460" y="473" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4A5568">Reference: AlphaSage (Shi et al. 2023) + Trajectory Balance (Malkin et al. 2022) + Flow Matching (Lipman et al. 2022)</text>
   <text x="460" y="488" text-anchor="middle" font-size="9" fill="#718096">Trajectory balance loss = continuous-time flow matching on discrete expression graph · Entropy ≠ argmax → maintains diversity of alpha pool</text>
   <text x="460" y="502" text-anchor="middle" font-size="9" fill="#A0AEC0">Expression operators: rank, cs_rank, ts_mean, ts_std, log, corr, mom_N, vol_N, β, turnover, vwap deviation</text>
 </svg>

@@ -22,7 +22,7 @@ Alpha mining is a **distribution problem**, not an optimization problem. A portf
 
 ![Diffusion-Flow Alpha Mining](figures/diffusion_flow_alpha.svg)
 
-The diagram shows the learned transport from a uniform prior over expression trees to a target distribution P(α) ∝ R(α), where R(α) = IC(α) is the information coefficient. The Trajectory Balance loss (GFlowNet-TB) is mathematically equivalent to continuous-time flow matching on the discrete expression graph — this is the key insight that unifies diffusion models and GFlowNets under a single framework.
+The diagram shows the learned transport from a uniform prior over expression trees to a target distribution P(α) ∝ R(α), where R(α) = IC(α) is the information coefficient. The Trajectory Balance (TB) loss is mathematically equivalent to continuous-time flow matching on the discrete expression graph — this is the key insight that unifies continuous diffusion models and discrete flow-based generative samplers under a single framework.
 
 ---
 
@@ -56,7 +56,7 @@ We use a **flow-based diffusion model** over a discrete expression grammar — t
 
 ## Academic Validation
 
-[**AlphaSAGE (ICLR 2026)**](https://arxiv.org/abs/2509.25055) — *Structure-Aware Alpha Mining via GFlowNets for Robust Exploration* — independently confirms that flow-based diffusion models applied to alpha mining outperform RL baselines and achieve more diverse factor portfolios. This project is an earlier prototype of the same approach.
+[**AlphaSAGE (ICLR 2026)**](https://arxiv.org/abs/2509.25055) — structure-aware alpha mining with flow-based generative samplers for robust exploration — independently confirms that flow-based diffusion models applied to alpha mining outperform RL baselines and achieve more diverse factor portfolios. This project is an earlier prototype of the same approach.
 
 ---
 
@@ -91,7 +91,7 @@ For readers more familiar with continuous diffusion (DDPM, score matching, flow 
 - **Training signal**: Trajectory Balance loss ↔ score matching objective
 - **Key property**: samples the full distribution, not a single optimum
 
-GFlowNets, diffusion models, and flow matching share the same mathematical backbone: **learned probability transport from a prior to a target distribution**. The discrete expression tree setting requires flow-based rather than score-based methods — but the generative principle is identical.
+Discrete flow-based generative samplers, diffusion models, and flow matching share the same mathematical backbone: **learned probability transport from a prior to a target distribution**. The discrete expression tree setting requires flow-based rather than score-based methods — but the generative principle is identical.
 
 ---
 
@@ -105,9 +105,9 @@ GFlowNets, diffusion models, and flow matching share the same mathematical backb
 
 ## Reading List
 
-- Bengio et al. (2021) — GFlowNet Foundations
-- Malkin et al. (2022) — Trajectory Balance: Improved Credit Assignment in GFlowNets
-- Pan et al. (2023) — Better Training of GFlowNets with Local Credit and Incomplete Trajectories
+- Bengio et al. (2021) — foundations of flow-based generative samplers over discrete compositional objects — [arXiv:2111.09266](https://arxiv.org/abs/2111.09266)
+- Malkin et al. (2022) — Trajectory Balance: improved credit assignment for flow-based samplers — [arXiv:2201.13259](https://arxiv.org/abs/2201.13259)
+- Pan et al. (2023) — better training of flow-based samplers with local credit and incomplete trajectories — [arXiv:2302.01687](https://arxiv.org/abs/2302.01687)
 - Song et al. (2020) — Score-Based Generative Modeling through SDEs
 - Lipman et al. (2022) — Flow Matching for Generative Modeling
 - Lasry & Lions (2007) — Mean Field Games
